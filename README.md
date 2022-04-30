@@ -1,12 +1,15 @@
-# Testnet
+# Rhapsody Testnet
 Quicksilver Testnet Instructions and Config
+
+**If you experience any bugs, issues or problems, please raise an issue here:** https://github.com/ingenuity-build/quicksilver
 
 ## Details
 
  - Chain-ID: `quicktest-1`
  - Launch Date: 2022-04-30
- - Current Version: `v0.1.0`
- - Genesis File: https://raw.githubusercontent.com/ingenuity-build/testnets/275ed0cc42a9c3bea85746325acb80da5ef20500/rhapsody/genesis.json
+ - Current Version: `v0.1.1`
+ - Genesis File: https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json
+
 
 ### Nodes
 We are running the following nodes:
@@ -17,13 +20,14 @@ We are running the following nodes:
 
 Seeds:
 
- - 7e1d1b7df640076f715b7096f66795958c379b1e@node04.quicktest-1.quicksilver.zone:26656
+ - dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.quicktest-1.quicksilver.zone:26656
+
 
 ## Configuration
 
 Download and build Quicksilver:
 
-    git clone https://github.com/ingenuity-build/quicksilver.git
+    git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.1.1
     cd quicksilver
     make build
 
@@ -35,12 +39,10 @@ Testnet configuration script (`touch scripts/testnet-conf.sh`):
     
     ### CONFIGURATION ###
     
-    QS_IMAGE=quicksilverzone/quicksilver
-    QS_VERSION=v0.1.0
     CHAIN_ID=quicktest-1
     
-    GENESIS_URL="https://raw.githubusercontent.com/ingenuity-build/testnets/275ed0cc42a9c3bea85746325acb80da5ef20500/rhapsody/genesis.json"
-    SEEDS="7e1d1b7df640076f715b7096f66795958c379b1e@node04.quicktest-1.quicksilver.zone:26656"
+    GENESIS_URL="https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json"
+    SEEDS="dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.quicktest-1.quicksilver.zone:26656"
     
     BINARY=./build/quicksilverd
     NODE_HOME=$HOME/.quicksilverd
@@ -56,7 +58,7 @@ Testnet configuration script (`touch scripts/testnet-conf.sh`):
     export TRUST_HEIGHT=
     # set hash
     export TRUST_HASH=""
-    export SYNC_RPC="node02.quicktest-1.quicksilver.zone:26657,node03.quicktest-1.quicksilver.zone:26657,node04.quicktest-1.quicksilver.zone:26657"
+    export SYNC_RPC="http://node02.quicktest-1.quicksilver.zone:26657,http://node03.quicktest-1.quicksilver.zone:26657,http://node04.quicktest-1.quicksilver.zone:26657"
     
     echo  "Initializing $CHAIN_ID..."
     $BINARY config chain-id $CHAIN_ID --home $NODE_HOME
@@ -138,3 +140,8 @@ Then simply run the tx to upgrade to validator status:
       --commission-max-change-rate=0.1 \
       --min-self-delegation=1 \
       --pubkey=$($BINARY tendermint show-validator)
+
+
+## Using minting qAtoms on Quicksilver
+
+Instructions to come early next week!
