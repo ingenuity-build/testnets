@@ -5,7 +5,7 @@ Quicksilver Testnet Instructions and Config
 
 ## Details
 
- - Chain-ID: `quicktest-1`
+ - Chain-ID: `quicktest-2`
  - Launch Date: 2022-05-01
  - Current Version: `v0.1.3`
  - Genesis File: https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json
@@ -40,7 +40,7 @@ Testnet configuration script (`touch scripts/testnet-conf.sh`):
     
     ### CONFIGURATION ###
     
-    CHAIN_ID=quicktest-1
+    CHAIN_ID=quicktest-2
     
     GENESIS_URL="https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json"
     SEEDS="dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.quicktest-1.quicksilver.zone:26656"
