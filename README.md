@@ -6,14 +6,15 @@ Quicksilver Testnet Instructions and Config
 ## Details
 
  - Chain-ID: `quicktest-1`
- - Launch Date: 2022-04-30
- - Current Version: `v0.1.1`
+ - Launch Date: 2022-05-01
+ - Current Version: `v0.1.3`
  - Genesis File: https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json
 
 
 ### Nodes
 We are running the following nodes:
 
+ - node01.quicktest-1.quicksilver.zone:26657
  - node02.quicktest-1.quicksilver.zone:26657
  - node03.quicktest-1.quicksilver.zone:26657
  - node04.quicktest-1.quicksilver.zone:26657
@@ -27,7 +28,7 @@ Seeds:
 
 Download and build Quicksilver:
 
-    git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.1.1
+    git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.1.3
     cd quicksilver
     make build
 
