@@ -33,7 +33,7 @@ Seeds:
  - dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.quicktest-1.quicksilver.zone:26656
 
 
-## Scripted Configuration
+## Semi-automated Configuration
 
 ```
 ## clone this repo
@@ -90,7 +90,7 @@ Error: post failed: Post "http://localhost:26657": dial tcp 127.0.0.1:26657: con
 Solution: Your node is not running; run `make start`. If problems persist, take a look at `make logs` and come find someone on discord!
 
 
-## Configuration
+## Manual Configuration
 
 Download and build Quicksilver:
 
