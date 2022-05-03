@@ -1,5 +1,14 @@
+![Freddie Mercury](https://static.miraheze.org/nonciclopediawiki/thumb/8/84/Freddie_Mercury_simpson.png/200px-Freddie_Mercury_simpson.png)
+
 # Rhapsody Testnet
-Quicksilver Testnet Instructions and Config
+The Rhapsody testnet is named for the hit song "Bohemian Rhapsody" written by Freddie Mercury, for his band Queen, back in 1975. For inspiration whilst joining this testnet, please feel free to listen to this in the background: [Bohemian Rhapsody on YouTube](https://www.youtube.com/watch?v=fJ9rUzIMcZQ).
+
+All Quicksilver testnets shall be named after songs by Freddie Mercury and/or Queen, for no reason more than the guy was a lyrical and musical genius, and there is a somewhat tenuous link between Quicksilver -> Mercury -> Freddie that is ripe for exploitation. 
+
+We have added a bunch of scripts to aid your journey; you'll need `make`, `bash`, `git`, `jq`, `gcc` and `go` (v1.17) installed, along with some additional dependencies that will depend on your OS (e.g. `stdlibc++`).
+
+Additional tasks will be added during the coming days.
+
 
 **If you experience any bugs, issues or problems, please raise an issue here:** https://github.com/ingenuity-build/quicksilver
 
@@ -22,6 +31,63 @@ We are running the following nodes:
 Seeds:
 
  - dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.quicktest-1.quicksilver.zone:26656
+
+
+## Scripted Configuration
+
+```
+## clone this repo
+git clone https://github.com/ingenuity-build/testnets ## this repo
+cd testnets/rhapsody
+
+## download and build quicksilverd and gaiad
+make init
+
+## show keys
+make keys
+
+## follow instructions listed to get funds from the faucet via discord
+
+## check balances
+make balances
+
+## start the validator
+make start
+
+## view the logs
+make logs
+
+## submit a create-validator tx to start validating (enter your validator name when prompted)
+make validate 
+
+---
+
+## clean up time! (post-testnet)
+make stop 
+
+make clean
+```
+
+### What am I doing wrong?!
+
+#### Unfunded account
+```
+joe@desktop:~/code/testnets/rhapsody$ make validate
+Enter your validator name: my_validator
+Error: rpc error: code = NotFound desc = rpc error: code = NotFound desc = account quick1fk9qtycszzk32c3hk8xwjwvkhmkc8rv6gg0xzd not found: key not found
+```
+
+Solution: Use discord #qck-tap channel to fund your address (might take a few seconds to come through!)
+
+#### Node not running
+```
+joe@desktop:~/code/testnets/rhapsody$ make validate
+Enter your validator name: my_validator
+Error: post failed: Post "http://localhost:26657": dial tcp 127.0.0.1:26657: connect: connection refused
+...
+```
+
+Solution: Your node is not running; run `make start`. If problems persist, take a look at `make logs` and come find someone on discord!
 
 
 ## Configuration
