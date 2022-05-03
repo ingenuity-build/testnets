@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2022-05-01T20:00:00Z",
-  "chain_id": "quicktest-2",
+  "genesis_time": "2022-05-02T18:30:00Z",
+  "chain_id": "quicktest-3",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -287,7 +287,7 @@
             }
           },
           "signatures": [
-            "+uWRIFsNRCRo3Wt5VFVTwoLwsfdG8YrveuJZiiHL6aUd+TpyGlhLF9kpG2XxF0npdp1/F0cRJrt7wwsNP6YUog=="
+            "KCDxFhR0ki4w7a3nO1s+SzPORX6Ya+dQ7tAzyplIcvIeICmwUznZfozUQ7AE1Q1b84loVzxUv1/BO0kAUadzsA=="
           ]
         },
         {
@@ -348,7 +348,7 @@
             }
           },
           "signatures": [
-            "nmmoatblHdhcRMIZPCGtHVjOklzmX2GmHxmZ0W6Wd9cej94Wo6SmfStTTSnuYkX4J+A7I6cMnc3ej4t0PL4CsQ=="
+            "exKhZkX+wrc5vM3g+vvyid6muuKCot2fOMuV94ZAbpg/FBPdvISGp2yo3QTmn9uXK18TwH6jiOcJjL4dxW/jlg=="
           ]
         },
         {
@@ -381,7 +381,7 @@
                 }
               }
             ],
-            "memo": "43bca26cb1b2e7474a8ffa560f210494023d5de4@172.23.0.2:26656",
+            "memo": "43bca26cb1b2e7474a8ffa560f210494023d5de4@135.181.140.225:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -409,7 +409,7 @@
             }
           },
           "signatures": [
-            "t+NXOfIOUFKcz8hZjMfFSrUuXq/muCSnMY0RzSIKMu5DU1QFXz5p/AD1TLDQGJnPdVvkMX2O3bIBRD0CmZ99Vg=="
+            "CRHMsl4gZ/H00Hc+dtYaa8MZmRsK02zzH4CNBQFCl0YaLmDb6Bf79zGmd+6HNbMNvP8sBvz41OdM9DjOCqFE6g=="
           ]
         },
         {
@@ -442,7 +442,7 @@
                 }
               }
             ],
-            "memo": "7e1d1b7df640076f715b7096f66795958c379b1e@172.28.0.2:26656",
+            "memo": "7e1d1b7df640076f715b7096f66795958c379b1e@135.181.212.155:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -470,7 +470,7 @@
             }
           },
           "signatures": [
-            "+krdyxOa6Tuhaw9q51jiluu4pc4/RD5Q+duCoG0K+7tMYukW5e1GV9vQ8wocdBNhalEE5E0tEjgsNu0Z9hdFYQ=="
+            "zaqzCTZVEJqEUuUovH5+Fk4ONkCxlXeqXbhtAfbd4Kx6xhAQ27hM1krVriVoin0wUFTZJmEX6YU4GzYwyFXyeA=="
           ]
         }
       ]
