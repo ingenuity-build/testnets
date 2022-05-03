@@ -19,6 +19,12 @@ Additional tasks will be added during the coming days.
  - Current Version: `v0.1.10`
  - Genesis File: https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json
 
+### Hardware Requirements
+Like any Cosmos-SDK chain, the hardware requirements are pretty modest.
+ - 4x CPUs; the faster clock speed the better
+ - 8GB RAM
+ - 40GB Disk (we are using statesync, so disk requirements are low)
+ - Permanent Internet connection (traffic will be minimal during testnet; 10Mbps will be plenty - for production at least 100Mbps is expected)
 
 ### Nodes
 We are running the following nodes:
@@ -98,7 +104,7 @@ Download and build Quicksilver:
     cd quicksilver
     make build
 
-Testnet configuration script (`touch scripts/testnet-conf.sh`):
+Testnet configuration script (`touch scripts/testnet_conf.sh`):
 
     #!/bin/bash -i
     
@@ -117,7 +123,8 @@ Testnet configuration script (`touch scripts/testnet-conf.sh`):
     # SET this value for your node:
     NODE_MONIKER="Your_Node"
     
-    ### OPTIONAL STATE ###
+    ### STATE SYNC ###
+    # To sync the chain on v0.1.10, you _will_ need to use statesync. See testnets/rhapsody/quicksilver.sh for more information.
     
     # if you set this to true, please have TRUST HEIGHT and TRUST HASH and RPC configured
     export STATE_SYNC=false
