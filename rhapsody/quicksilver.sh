@@ -17,6 +17,7 @@ make build
 
 GENESIS_URL="https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json"
 SEEDS="dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.rhapsody-4.quicksilver.zone:26656"
+PEERS="f0702cf0b7d925af474417bdb41deda534b6c2cb@65.108.218.138:26656"
 
 # SET this value for your node:
 NODE_MONIKER="$(hostname -f)"
@@ -54,6 +55,9 @@ cp $SRC_DIR/genesis.json $QS_HOME/config/genesis.json
 sed -i.bak -E "s|^pruning = \"default\"|pruning = \"everything\"|" $QS_HOME/config/app.toml
 echo "Set seeds..."
 sed -i -e "/seeds =/ s/= .*/= \"$SEEDS\"/"  $QS_HOME/config/config.toml
+echo "Set peers..."
+sed -i -e "/persistent_peers =/ s/= .*/= \"$PEERS\"/"  $QS_HOME/config/config.toml
+
 
 $QS_BIN --home $QS_HOME tendermint unsafe-reset-all
 
