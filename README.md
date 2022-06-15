@@ -40,6 +40,10 @@ Seeds:
 
  - dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.rhapsody-4.quicksilver.zone:26656
 
+Peers:
+
+ - f0702cf0b7d925af474417bdb41deda534b6c2cb@65.108.218.138:26656"
+
 
 ## Semi-automated Configuration
 
