@@ -2,16 +2,18 @@
 
 init:
 	./quicksilver.sh
-	./gaia.sh
 
 clean:
-	rm -rf /tmp/rhapsody
+	rm -rf ~/rhapsody
 
 keys:
 	./keys.sh
 
 balances:
 	./balances.sh
+
+reset:
+	./reset.sh
 
 start:
 	./start.sh

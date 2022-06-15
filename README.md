@@ -14,29 +14,31 @@ Additional tasks will be added during the coming days.
 
 ## Details
 
- - Chain-ID: `quicktest-3`
- - Launch Date: 2022-05-02
- - Current Version: `v0.1.10`
+ - Chain-ID: `rhapsody-4`
+ - Launch Date: 2022-06-14
+ - Current Version: `v0.2.0`
  - Genesis File: https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json
+
+*important: statesync does not currently work as of v0.2.0; we are aware of the cause of this issue and will aim to rectify this before Killer Queen.*
 
 ### Hardware Requirements
 Like any Cosmos-SDK chain, the hardware requirements are pretty modest.
  - 4x CPUs; the faster clock speed the better
  - 8GB RAM
- - 40GB Disk (we are using statesync, so disk requirements are low)
+ - 100GB Disk (we are using statesync, so disk requirements are low)
  - Permanent Internet connection (traffic will be minimal during testnet; 10Mbps will be plenty - for production at least 100Mbps is expected)
 
 ### Nodes
 We are running the following nodes:
 
- - node01.quicktest-1.quicksilver.zone:26657
- - node02.quicktest-1.quicksilver.zone:26657
- - node03.quicktest-1.quicksilver.zone:26657
- - node04.quicktest-1.quicksilver.zone:26657
+ - node01.rhapsody-4.quicksilver.zone:26657
+ - node02.rhapsody-4.quicksilver.zone:26657
+ - node03.rhapsody-4.quicksilver.zone:26657
+ - node04.rhapsody-4.quicksilver.zone:26657
 
 Seeds:
 
- - dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.quicktest-1.quicksilver.zone:26656
+ - dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.rhapsody-4.quicksilver.zone:26656
 
 
 ## Semi-automated Configuration
@@ -65,6 +67,13 @@ make logs
 
 ## submit a create-validator tx to start validating (enter your validator name when prompted)
 make validate 
+
+---
+
+## reset state (sync from zero)
+make stop
+
+make reset
 
 ---
 
@@ -100,7 +109,7 @@ Solution: Your node is not running; run `make start`. If problems persist, take 
 
 Download and build Quicksilver:
 
-    git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.1.10
+    git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.2.0
     cd quicksilver
     make build
 
@@ -112,27 +121,16 @@ Testnet configuration script (`touch scripts/testnet_conf.sh`):
     
     ### CONFIGURATION ###
     
-    CHAIN_ID=quicktest-3
+    CHAIN_ID=rhapsody-4
     
     GENESIS_URL="https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json"
-    SEEDS="dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.quicktest-1.quicksilver.zone:26656"
+    SEEDS="dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.rhapsody-4.quicksilver.zone:26656"
     
     BINARY=./build/quicksilverd
     NODE_HOME=$HOME/.quicksilverd
     
     # SET this value for your node:
     NODE_MONIKER="Your_Node"
-    
-    ### STATE SYNC ###
-    # To sync the chain on v0.1.10, you _will_ need to use statesync. See testnets/rhapsody/quicksilver.sh for more information.
-    
-    # if you set this to true, please have TRUST HEIGHT and TRUST HASH and RPC configured
-    export STATE_SYNC=false
-    # set height
-    export TRUST_HEIGHT=
-    # set hash
-    export TRUST_HASH=""
-    export SYNC_RPC="http://node02.quicktest-1.quicksilver.zone:26657,http://node03.quicktest-1.quicksilver.zone:26657,http://node04.quicktest-1.quicksilver.zone:26657"
     
     echo  "Initializing $CHAIN_ID..."
     $BINARY config chain-id $CHAIN_ID --home $NODE_HOME
@@ -143,18 +141,11 @@ Testnet configuration script (`touch scripts/testnet_conf.sh`):
     echo "Get genesis file..."
     curl -sSL $GENESIS_URL > $NODE_HOME/config/genesis.json
     
-    if  $STATE_SYNC; then
-        echo  "Enabling state sync..."
-        sed -i -e '/enable =/ s/= .*/= true/'  $NODE_HOME/config/config.toml
-        sed -i -e "/trust_height =/ s/= .*/= $TRUST_HEIGHT/"  $NODE_HOME/config/config.toml
-        sed -i -e "/trust_hash =/ s/= .*/= \"$TRUST_HASH\"/"  $NODE_HOME/config/config.toml
-        sed -i -e "/rpc_servers =/ s/= .*/= \"$SYNC_RPC\"/"  $NODE_HOME/config/config.toml
-    else
-        echo  "Disabling state sync..."
-    fi
-    
     echo "Set seeds..."
     sed -i -e "/seeds =/ s/= .*/= \"$SEEDS\"/"  $NODE_HOME/config/config.toml
+
+    echo "Enable pruning..."
+    sed -i -e "/pruning =/ s/= .*/= \"everything\"/"  $NODE_HOME/config/app.toml
 
 Run this script from the quicksilver repository main directory;
 
@@ -216,6 +207,12 @@ Then simply run the tx to upgrade to validator status:
       --pubkey=$($BINARY tendermint show-validator)
 
 
-## Using minting qAtoms on Quicksilver
+## Archived Testnets
 
-Instructions to come early next week!
+## Rhapsody (phase 1)
+
+ - Chain-ID: `quicktest-3`
+ - Launch Date: 2022-05-02
+ - Current Version: `v0.1.10`
+ - Genesis File: https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json
+
