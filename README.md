@@ -19,6 +19,8 @@ Additional tasks will be added during the coming days.
  - Current Version: `v0.2.0`
  - Genesis File: https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json
 
+*important: statesync does not currently work as of v0.2.0; we are aware of the cause of this issue and will aim to rectify this before Killer Queen.*
+
 ### Hardware Requirements
 Like any Cosmos-SDK chain, the hardware requirements are pretty modest.
  - 4x CPUs; the faster clock speed the better
