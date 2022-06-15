@@ -30,7 +30,7 @@ Like any Cosmos-SDK chain, the hardware requirements are pretty modest.
 We are running the following nodes:
 
  - node01.rhapsody-4.quicksilver.zone:26657
- - node02.rhapsdoy-4.quicksilver.zone:26657
+ - node02.rhapsody-4.quicksilver.zone:26657
  - node03.rhapsody-4.quicksilver.zone:26657
  - node04.rhapsody-4.quicksilver.zone:26657
 
