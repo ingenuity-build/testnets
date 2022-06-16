@@ -1,26 +1,4 @@
 {
-  "genesis_time": "2022-06-16T00:00:00Z",
-  "chain_id": "rhapsody-5",
-  "initial_height": "1",
-  "consensus_params": {
-    "block": {
-      "max_bytes": "22020096",
-      "max_gas": "-1",
-      "time_iota_ms": "1000"
-    },
-    "evidence": {
-      "max_age_num_blocks": "100000",
-      "max_age_duration": "172800000000000",
-      "max_bytes": "1048576"
-    },
-    "validator": {
-      "pub_key_types": [
-        "ed25519"
-      ]
-    },
-    "version": {}
-  },
-  "app_hash": "",
   "app_state": {
     "auth": {
       "accounts": [
@@ -214,7 +192,7 @@
           "current_epoch": "0",
           "current_epoch_start_height": "0",
           "current_epoch_start_time": "0001-01-01T00:00:00Z",
-          "duration": "216000s",
+          "duration": "86400s",
           "epoch_counting_started": false,
           "identifier": "epoch",
           "start_time": "0001-01-01T00:00:00Z"
@@ -230,247 +208,247 @@
     "genutil": {
       "gen_txs": [
         {
-          "body": {
-            "messages": [
-              {
-                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
-                "description": {
-                  "moniker": "Quicksilver - Two",
-                  "identity": "",
-                  "website": "",
-                  "security_contact": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "quick1q5hx3rlnla4d43shwzecre675ts0h2vsry6xkm",
-                "validator_address": "quickvaloper1q5hx3rlnla4d43shwzecre675ts0h2vsaf5tcj",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "0vzJM4Fv8iSZ58iEsuO/isX56Fu32Ey/EtHphRBiVn0="
-                },
-                "value": {
-                  "denom": "uqck",
-                  "amount": "9999999999"
-                }
-              }
-            ],
-            "memo": "43bca26cb1b2e7474a8ffa560f210494023d5de4@135.181.140.225:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
           "auth_info": {
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "granter": "",
+              "payer": ""
+            },
             "signer_infos": [
               {
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
                   "key": "AwBJ+bwkI0NvsKheyT1haOBP4Q78Lmyxpwmd4H9OSCXF"
                 },
+                "sequence": "0"
+              }
+            ]
+          },
+          "body": {
+            "extension_options": [],
+            "memo": "43bca26cb1b2e7474a8ffa560f210494023d5de4@135.181.140.225:26656",
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "commission": {
+                  "max_change_rate": "0.010000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "rate": "0.100000000000000000"
+                },
+                "delegator_address": "quick1q5hx3rlnla4d43shwzecre675ts0h2vsry6xkm",
+                "description": {
+                  "details": "",
+                  "identity": "",
+                  "moniker": "Quicksilver - Two",
+                  "security_contact": "",
+                  "website": ""
+                },
+                "min_self_delegation": "1",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "0vzJM4Fv8iSZ58iEsuO/isX56Fu32Ey/EtHphRBiVn0="
+                },
+                "validator_address": "quickvaloper1q5hx3rlnla4d43shwzecre675ts0h2vsaf5tcj",
+                "value": {
+                  "amount": "9999999999",
+                  "denom": "uqck"
+                }
+              }
+            ],
+            "non_critical_extension_options": [],
+            "timeout_height": "0"
+          },
+          "signatures": [
+            "6BQ21B/qYVnjTNvgaGUoOnyCAm5Fj/7mry91esi8bt0PEVGNy7/F5m8oGIAYWCmXc88TJ+rAcdyoHvQeU/G3YA=="
+          ]
+        },
+        {
+          "auth_info": {
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "granter": "",
+              "payer": ""
+            },
+            "signer_infos": [
+              {
                 "mode_info": {
                   "single": {
                     "mode": "SIGN_MODE_DIRECT"
                   }
                 },
-                "sequence": "0"
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            }
-          },
-          "signatures": [
-            "s0Ej0cRYaA+39aYzffH1e7BIbHnRL7TnqVHcKTpbcuxMvjjJiYmhhHhPK0mksbiTHIG9QVU7Fz8rmUz5mXWgvw=="
-          ]
-        },
-        {
-          "body": {
-            "messages": [
-              {
-                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
-                "description": {
-                  "moniker": "Quicksilver - Three",
-                  "identity": "",
-                  "website": "",
-                  "security_contact": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "quick1g79a0rfarjw3pvwa2hss8khy7c7eezfpaacey9",
-                "validator_address": "quickvaloper1g79a0rfarjw3pvwa2hss8khy7c7eezfprsk52v",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "jpFGugnLuKIiBrpoZwukauvUeLc/UkHuLx3l5pfdFv4="
-                },
-                "value": {
-                  "denom": "uqck",
-                  "amount": "9999999999"
-                }
-              }
-            ],
-            "memo": "9428068507466b542cbf378d59b77746c1d19a34@157.90.35.151:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
-          "auth_info": {
-            "signer_infos": [
-              {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
                   "key": "A49MOVpip9LPdVGRMgiEx+QngvHUkpWms5ddjs4Id3ai"
                 },
+                "sequence": "0"
+              }
+            ]
+          },
+          "body": {
+            "extension_options": [],
+            "memo": "9428068507466b542cbf378d59b77746c1d19a34@157.90.35.151:26656",
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "commission": {
+                  "max_change_rate": "0.010000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "rate": "0.100000000000000000"
+                },
+                "delegator_address": "quick1g79a0rfarjw3pvwa2hss8khy7c7eezfpaacey9",
+                "description": {
+                  "details": "",
+                  "identity": "",
+                  "moniker": "Quicksilver - Three",
+                  "security_contact": "",
+                  "website": ""
+                },
+                "min_self_delegation": "1",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "jpFGugnLuKIiBrpoZwukauvUeLc/UkHuLx3l5pfdFv4="
+                },
+                "validator_address": "quickvaloper1g79a0rfarjw3pvwa2hss8khy7c7eezfprsk52v",
+                "value": {
+                  "amount": "9999999999",
+                  "denom": "uqck"
+                }
+              }
+            ],
+            "non_critical_extension_options": [],
+            "timeout_height": "0"
+          },
+          "signatures": [
+            "bgox6lJN5IYI1RYP3bZjm7guKYspRXISk0ylz4gSxzAYxzwjmwPCQAyI/qeBoZ+a/kgtFNQY25bCs47Y9HbzEw=="
+          ]
+        },
+        {
+          "auth_info": {
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "granter": "",
+              "payer": ""
+            },
+            "signer_infos": [
+              {
                 "mode_info": {
                   "single": {
                     "mode": "SIGN_MODE_DIRECT"
                   }
                 },
-                "sequence": "0"
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            }
-          },
-          "signatures": [
-            "qt/2jMBW5M+JEYR5GihwAR41iqpDgahq8oJWxrL/DzUCWnDtRg+k/g5ofXVHmDrd2S2tCkIn/HvD4qy+yuvL/w=="
-          ]
-        },
-        {
-          "body": {
-            "messages": [
-              {
-                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
-                "description": {
-                  "moniker": "Quicksilver - Four",
-                  "identity": "",
-                  "website": "",
-                  "security_contact": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "quick1gjltt9drge95euuvw6zeexr4m84nf3read36ld",
-                "validator_address": "quickvaloper1gjltt9drge95euuvw6zeexr4m84nf3rerqlh3y",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "mqCU5aHQQKYP3eMTNeEeEv1dfjEq0cQj9ab87mOxmcE="
-                },
-                "value": {
-                  "denom": "uqck",
-                  "amount": "9999999999"
-                }
-              }
-            ],
-            "memo": "7e1d1b7df640076f715b7096f66795958c379b1e@135.181.212.155:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
-          "auth_info": {
-            "signer_infos": [
-              {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
                   "key": "AuNTP/4djv391Xr8zyCUWiha637cQe79sXm4LqwqzLxl"
                 },
+                "sequence": "0"
+              }
+            ]
+          },
+          "body": {
+            "extension_options": [],
+            "memo": "7e1d1b7df640076f715b7096f66795958c379b1e@135.181.212.155:26656",
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "commission": {
+                  "max_change_rate": "0.010000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "rate": "0.100000000000000000"
+                },
+                "delegator_address": "quick1gjltt9drge95euuvw6zeexr4m84nf3read36ld",
+                "description": {
+                  "details": "",
+                  "identity": "",
+                  "moniker": "Quicksilver - Four",
+                  "security_contact": "",
+                  "website": ""
+                },
+                "min_self_delegation": "1",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "mqCU5aHQQKYP3eMTNeEeEv1dfjEq0cQj9ab87mOxmcE="
+                },
+                "validator_address": "quickvaloper1gjltt9drge95euuvw6zeexr4m84nf3rerqlh3y",
+                "value": {
+                  "amount": "9999999999",
+                  "denom": "uqck"
+                }
+              }
+            ],
+            "non_critical_extension_options": [],
+            "timeout_height": "0"
+          },
+          "signatures": [
+            "ct1j7dGAeDYlNwZAuWCBO6HzuNxy5cwSyOZrh456YMZu+omSMnHAgjUTCXswGks1GQuDjJp1J6wC7+1x6kmaxA=="
+          ]
+        },
+        {
+          "auth_info": {
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "granter": "",
+              "payer": ""
+            },
+            "signer_infos": [
+              {
                 "mode_info": {
                   "single": {
                     "mode": "SIGN_MODE_DIRECT"
                   }
                 },
-                "sequence": "0"
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            }
-          },
-          "signatures": [
-            "gEoxAdQBtZPmC8kzTpr4Jzd6Fp6Cj0S7ni4ar24BfTs5LSJVBvS5RPc+c33PXBLy1cHniG/BniQqKDqTqlQP3A=="
-          ]
-        },
-        {
-          "body": {
-            "messages": [
-              {
-                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
-                "description": {
-                  "moniker": "Quicksilver - One",
-                  "identity": "",
-                  "website": "",
-                  "security_contact": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "quick1xghws3w6t8qmjxs4lq2enmvd7ze44s56ercykl",
-                "validator_address": "quickvaloper1xghws3w6t8qmjxs4lq2enmvd7ze44s568wkfck",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "QntYXIFA5qfrH9qVkgzQgt6yzJ9d8Q2Q6WEfTV+dgkA="
-                },
-                "value": {
-                  "denom": "uqck",
-                  "amount": "9999999999"
-                }
-              }
-            ],
-            "memo": "125bc0d56f14162ca63bb43ce3dde089033d97f4@88.99.216.171:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
-          "auth_info": {
-            "signer_infos": [
-              {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
                   "key": "AgdBizdJxszKjrRbOaThTVCR8sKwoiMYOQkOv8bog/Bz"
                 },
-                "mode_info": {
-                  "single": {
-                    "mode": "SIGN_MODE_DIRECT"
-                  }
-                },
                 "sequence": "0"
               }
+            ]
+          },
+          "body": {
+            "extension_options": [],
+            "memo": "125bc0d56f14162ca63bb43ce3dde089033d97f4@88.99.216.171:26656",
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "commission": {
+                  "max_change_rate": "0.010000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "rate": "0.100000000000000000"
+                },
+                "delegator_address": "quick1xghws3w6t8qmjxs4lq2enmvd7ze44s56ercykl",
+                "description": {
+                  "details": "",
+                  "identity": "",
+                  "moniker": "Quicksilver - One",
+                  "security_contact": "",
+                  "website": ""
+                },
+                "min_self_delegation": "1",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "QntYXIFA5qfrH9qVkgzQgt6yzJ9d8Q2Q6WEfTV+dgkA="
+                },
+                "validator_address": "quickvaloper1xghws3w6t8qmjxs4lq2enmvd7ze44s568wkfck",
+                "value": {
+                  "amount": "9999999999",
+                  "denom": "uqck"
+                }
+              }
             ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            }
+            "non_critical_extension_options": [],
+            "timeout_height": "0"
           },
           "signatures": [
-            "zSte//I2b/esz4BiYugsLMyQy3+cUcmIcjf3RvVXacBH2WDQ7WfDKWa26n6MJ9lWkaJnRDVPBvxUQIrbQWsiOw=="
+            "YLs9+zs/ycxpAkp5tR9Bcv1v6IZlEEtoNNen7P5+j1ZBQExy6Z/c5l1K8GfjRxAwQFQgQBpMQ9MH3b+oVMO/Ng=="
           ]
         }
       ]
@@ -574,7 +552,7 @@
           "pool_incentives": "0.300000000000000000",
           "staking": "0.300000000000000000"
         },
-        "epoch_identifier": "epoch",
+        "epoch_identifier": "day",
         "genesis_epoch_provisions": "1639344.000000000000000000",
         "mint_denom": "uqck",
         "minting_rewards_distribution_start_epoch": "0",
@@ -632,5 +610,26 @@
     },
     "upgrade": {},
     "vesting": {}
-  }
+  },
+  "chain_id": "rhapsody-4",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_duration": "172800000000000",
+      "max_age_num_blocks": "100000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {}
+  },
+  "genesis_time": "2022-06-14T12:00:00Z",
+  "initial_height": "1"
 }

@@ -14,12 +14,10 @@ Additional tasks will be added during the coming days.
 
 ## Details
 
- - Chain-ID: `rhapsody-4`
- - Launch Date: 2022-06-14
- - Current Version: `v0.2.0`
+ - Chain-ID: `rhapsody-5`
+ - Launch Date: 2022-06-16
+ - Current Version: `v0.3.0`
  - Genesis File: https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json
-
-*important: statesync does not currently work as of v0.2.0; we are aware of the cause of this issue and will aim to rectify this before Killer Queen.*
 
 ### Hardware Requirements
 Like any Cosmos-SDK chain, the hardware requirements are pretty modest.
@@ -31,14 +29,14 @@ Like any Cosmos-SDK chain, the hardware requirements are pretty modest.
 ### Nodes
 We are running the following nodes:
 
- - node01.rhapsody-4.quicksilver.zone:26657
- - node02.rhapsody-4.quicksilver.zone:26657
- - node03.rhapsody-4.quicksilver.zone:26657
- - node04.rhapsody-4.quicksilver.zone:26657
+ - node01.rhapsody-5.quicksilver.zone:26657
+ - node02.rhapsody-5.quicksilver.zone:26657
+ - node03.rhapsody-5.quicksilver.zone:26657
+ - node04.rhapsody-5.quicksilver.zone:26657
 
 Seeds:
 
- - dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.rhapsody-4.quicksilver.zone:26656
+ - dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.rhapsody-5.quicksilver.zone:26656
 
 
 ## Semi-automated Configuration
@@ -121,10 +119,10 @@ Testnet configuration script (`touch scripts/testnet_conf.sh`):
     
     ### CONFIGURATION ###
     
-    CHAIN_ID=rhapsody-4
+    CHAIN_ID=rhapsody-5
     
     GENESIS_URL="https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json"
-    SEEDS="dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.rhapsody-4.quicksilver.zone:26656"
+    SEEDS="dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.rhapsody-5.quicksilver.zone:26656"
     
     BINARY=./build/quicksilverd
     NODE_HOME=$HOME/.quicksilverd
@@ -209,10 +207,19 @@ Then simply run the tx to upgrade to validator status:
 
 ## Archived Testnets
 
+## Rhapsody-4
+
+ - Chain-ID: `rhapsody-4`
+ - Launch Date: 2022-06-14
+ - End Date: 2022-06-15
+ - Current Version: `v0.2.0`
+ - Genesis File: https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/rhapsody-4/genesis.json
+
 ## Rhapsody (phase 1)
 
  - Chain-ID: `quicktest-3`
  - Launch Date: 2022-05-02
+ - End Date: 2022-06-03
  - Current Version: `v0.1.10`
- - Genesis File: https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json
+ - Genesis File: https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/quicktest-3/genesis.json
 
