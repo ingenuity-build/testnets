@@ -107,7 +107,7 @@ Solution: Your node is not running; run `make start`. If problems persist, take 
 
 Download and build Quicksilver:
 
-    git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.2.0
+    git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.3.0
     cd quicksilver
     make build
 
