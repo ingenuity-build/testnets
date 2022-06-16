@@ -16,7 +16,7 @@ make build
 ### CONFIGURATION ###
 
 GENESIS_URL="https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json"
-SEEDS="dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.rhapsody-4.quicksilver.zone:26656"
+SEEDS="dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.$CHAIN_ID.quicksilver.zone:26656"
 
 # SET this value for your node:
 NODE_MONIKER="$(hostname -f)"
@@ -25,7 +25,7 @@ NODE_MONIKER="$(hostname -f)"
 
 # set height
 INTERVAL=1500
-LATEST_HEIGHT=$(curl -s http://seed.rhapsody-4.quicksilver.zone:26657/block | jq -r .result.block.header.height);
+LATEST_HEIGHT=$(curl -s http://seed.$CHAIN_ID.quicksilver.zone:26657/block | jq -r .result.block.header.height);
 BLOCK_HEIGHT=$(($(($LATEST_HEIGHT / $INTERVAL)) * $INTERVAL));
 if [ $BLOCK_HEIGHT -eq 0 ]; then
   echo "Error: Cannot state sync to block 0; Latest block is $LATEST_HEIGHT and must be at least $INTERVAL; wait a few blocks!"
@@ -51,7 +51,6 @@ cp $SRC_DIR/genesis.json $QS_HOME/config/genesis.json
 #s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 #s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"|" $QS_HOME/config/config.toml
 
-sed -i.bak -E "s|^pruning = \"default\"|pruning = \"everything\"|" $QS_HOME/config/app.toml
 echo "Set seeds..."
 sed -i -e "/seeds =/ s/= .*/= \"$SEEDS\"/"  $QS_HOME/config/config.toml
 
