@@ -66,6 +66,15 @@ make logs
 ## submit a create-validator tx to start validating (enter your validator name when prompted)
 make validate 
 
+## view validators
+make show-validators
+
+## view rewards
+make check-validator-rewards
+
+## view voting power
+make check-validator-voting-power
+
 ---
 
 ## reset state (sync from zero)
