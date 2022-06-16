@@ -24,17 +24,17 @@ NODE_MONIKER="$(hostname -f)"
 ### OPTIONAL STATE ###
 
 # set height
-INTERVAL=1500
-LATEST_HEIGHT=$(curl -s http://seed.$CHAIN_ID.quicksilver.zone:26657/block | jq -r .result.block.header.height);
-BLOCK_HEIGHT=$(($(($LATEST_HEIGHT / $INTERVAL)) * $INTERVAL));
-if [ $BLOCK_HEIGHT -eq 0 ]; then
-  echo "Error: Cannot state sync to block 0; Latest block is $LATEST_HEIGHT and must be at least $INTERVAL; wait a few blocks!"
-  exit 1
-fi
+# INTERVAL=1500
+# LATEST_HEIGHT=$(curl -s http://seed.$CHAIN_ID.quicksilver.zone:26657/block | jq -r .result.block.header.height);
+# BLOCK_HEIGHT=$(($(($LATEST_HEIGHT / $INTERVAL)) * $INTERVAL));
+# if [ $BLOCK_HEIGHT -eq 0 ]; then
+#   echo "Error: Cannot state sync to block 0; Latest block is $LATEST_HEIGHT and must be at least $INTERVAL; wait a few blocks!"
+#   exit 1
+# fi
 
-#TRUST_HASH=$(curl -s "http://seed.rhapsody-4.quicksilver.zone:26657/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
+#TRUST_HASH=$(curl -s "http://seed.rhapsody-5.quicksilver.zone:26657/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
 #echo "Trust hash: $TRUST_HASH"
-#SYNC_RPC="node02.rhapsody-4.quicksilver.zone:26657,node03.rhapsody-4.quicksilver.zone:26657,node04.rhapsody-4.quicksilver.zone:26657"
+#SYNC_RPC="node02.rhapsody-5.quicksilver.zone:26657,node03.rhapsody-5.quicksilver.zone:26657,node04.rhapsody-5.quicksilver.zone:26657"
 
 echo  "Initializing $CHAIN_ID..."
 $QS_BIN config chain-id $CHAIN_ID --home $QS_HOME
