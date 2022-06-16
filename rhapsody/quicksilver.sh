@@ -16,7 +16,7 @@ make build
 ### CONFIGURATION ###
 
 GENESIS_URL="https://raw.githubusercontent.com/ingenuity-build/testnets/main/rhapsody/genesis.json"
-SEEDS="dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.$CHAIN_ID.quicksilver.zone:26656"
+SEEDS="dd3460ec11f78b4a7c4336f22a356fe00805ab64@seed.$CHAIN_ID.quicksilver.zone:26656,8603d0778bfe0a8d2f8eaa860dcdc5eb85b55982@seed.qscosmos-2.quicksilver.zone:27656"
 
 # SET this value for your node:
 NODE_MONIKER="$(hostname -f)"
