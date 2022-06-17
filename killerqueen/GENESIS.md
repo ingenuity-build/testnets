@@ -2,6 +2,10 @@
 
 In order to become a genesis validator on `killerqueen-1`, you must generate a gentx (genesis transaction) in the following way:
 
+*Note: add `--home <new-qck-home-dir>` to end of each command to save results to the `<new-qck-home-dir>` folder*
+
+For ex.: *```quicksilverd init --chain_id 'killerqueen-1' <your_moniker> --home <new-qck-home-dir>```*
+
 ## Init a new Quicksilver instance, using: 
 
 ```quicksilverd init --chain_id 'killerqueen-1' <your_moniker>```
