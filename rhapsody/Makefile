@@ -25,12 +25,12 @@ logs:
 
 validate:
 	./validate.sh
-	
+
 show-validators:
-        ./show-validators.sh
+	./show-validators.sh
 
 check-validator-rewards:
-        ./check-validator-rewards.sh
+	./check-validator-rewards.sh
 
 check-validator-voting-power:
-        ./check-validator-voting-power.sh
+	./check-validator-voting-power.sh
