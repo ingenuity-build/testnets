@@ -4,7 +4,7 @@ In order to become a genesis validator on `killerqueen-1`, you must generate a g
 
 ## Init a new Quicksilver instance, using: 
 
-```quicksilverd init --chain_id 'killerqueen-1' <your_moniker>```
+```quicksilverd init <your_moniker> --chain_id 'killerqueen-1'```
 
 - Create, or recover a key, using 
 
