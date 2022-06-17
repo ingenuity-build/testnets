@@ -1,4 +1,4 @@
-# killerqueen-1 Genesis Transation
+# killerqueen-1 Genesis Transaction
 
 In order to become a genesis validator on `killerqueen-1`, you must generate a gentx (genesis transaction) in the following way:
 
