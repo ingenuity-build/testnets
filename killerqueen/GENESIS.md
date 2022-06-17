@@ -1,15 +1,17 @@
-Install quicksilver v0.3.0
-
-``` git clone https://github.com/ingenuity-build/quicksilver.git
-cd quicksilver
-git checkout v0.3.0
-make install```
-
-find the lastest binary in your GOBIN folder(probably ~/go/bin)
-
 # killerqueen-1 Genesis Transaction
 
 In order to become a genesis validator on `killerqueen-1`, you must generate a gentx (genesis transaction) in the following way:
+
+Install quicksilver v0.3.0
+
+```
+git clone https://github.com/ingenuity-build/quicksilver.git
+cd quicksilver
+git checkout v0.3.0
+make install 
+```
+
+find the lastest binary in your GOBIN folder(probably ~/go/bin)
 
 ## Init a new Quicksilver instance, using: 
 
