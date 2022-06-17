@@ -8,7 +8,7 @@ In order to become a genesis validator on `killerqueen-1`, you must generate a g
 
 - Create, or recover a key, using 
 
-```quicksilverd keys add <keyname>` or `quicksilver keys add --recover <keyname>```
+```quicksilverd keys add <keyname>` or `quicksilverd keys add --recover <keyname>```
 
 ## Fund your account 
 
