@@ -1,3 +1,5 @@
+# Full Node
+
 ### Prerequisites:
 
 Recommended hardware will depend on use cases and desired functionalities. However, the minimum specifications **required** are as follows: 
@@ -7,8 +9,6 @@ Recommended hardware will depend on use cases and desired functionalities. Howev
 4+ GB RAM
 
 120+ GB SSD
-
-# Full Node
 
 ### Installing Node:
 
