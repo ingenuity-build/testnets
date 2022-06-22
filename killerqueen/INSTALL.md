@@ -16,7 +16,7 @@ Before installing your node, please verify you meet all the prerequisites to par
 
 Operators can install the `quicksilverd` binary from the source.
 
-To install the `**quicksilverd**` binary from source, you will need to have Golang [1.17+](https://golang.org/dl/) installed on your OS.
+To install the `quicksilverd` binary from source, you will need to have Golang [1.17+](https://golang.org/dl/) installed on your OS.
 
 Once you have your environment setup correctly, clone the Quicksilver repository and install the binary:
 
