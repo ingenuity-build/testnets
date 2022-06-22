@@ -13,7 +13,7 @@ This will create and initialize a .quicksilverd directory in your `$HOME` path. 
 Once initialized, overwrite the default `genesis.json` file with genesis state file for the particular network that you are joining. You may retrieve the genesis state file from the Quicksilver repository or another trusted source:
 
 ```go
-$ cd ~/.quicksilver/config
+$ cd ~/.quicksilverd/config
 
 $ wget https://raw.githubusercontent.com/ingenuity-build/testnets/main/killerqueen/genesis.json
 
