@@ -7,7 +7,7 @@ All Quicksilver testnets shall be named after songs by Freddie Mercury and/or Qu
 
 Killer Queen testnet is twofold, and will support Validators, as well as Liquid Stakers on the User Interface. Validators that participated in Rhapsody, Quicksilver's initial tesnet, will get priority 
 
-Additional tasks will be added incrementally during the coming days.
+Additional tasks will be added incrementally during the coming days, and can be found here: [Validator Tasks](/killerqueen/VALIDATOR_TASKS.md). Tasks will also be announced on Discord.
 
 Additional information regarding the rewards distribution will be added during the coming days. 
 
