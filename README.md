@@ -13,6 +13,10 @@ Additional information regarding the rewards distribution will be added during t
 
 Please be advised that the completion of a KYC process is necessary to be able to receive rewards. Instructions on how to complete the KYC process will be added during the coming days. 
 
+## Peers and Seeds
+
+Peers and Seeds can be found [here](/killerqueen/PEERS_SEEDS.md). Please add your nodes to this list through a PR.
+
 ## Docs
 
 ~~[Create a Genesis Transaction](/killerqueen/GENESIS.md)~~ (no longer relevant)
