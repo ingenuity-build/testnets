@@ -26,6 +26,9 @@ logs:
 validate:
 	./validate.sh
 
+unjail:
+	./unjail.sh
+
 show-validators:
 	./show-validators.sh
 
