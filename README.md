@@ -25,4 +25,6 @@ Please be advised that the completion of a KYC process is necessary to be able t
 
 [Validators](/killerqueen/VALIDATE.md)
 
+[User Interface](/killerqueen/UI/README.md)
+
 Found anything missing or inaccurate? [Create an issue](https://github.com/ingenuity-build/testnets/issues) or make a pull request!
