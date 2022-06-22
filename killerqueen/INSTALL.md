@@ -26,6 +26,8 @@ $ git clone --branch v0.4.0 https://github.com/ingenuity-build/quicksilver.git
 $ cd quicksilver && make install
 ```
 
+The `quicksilverd` binary will be installed into your `$GOPATH/bin` directory.
+
 Finally, verify your quicksilverd version:
 
 ```
