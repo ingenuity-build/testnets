@@ -66,6 +66,15 @@ make logs
 ## submit a create-validator tx to start validating (enter your validator name when prompted)
 make validate 
 
+## view validators
+make show-validators
+
+## view rewards
+make check-validator-rewards
+
+## view voting power
+make check-validator-voting-power
+
 ---
 
 ## reset state (sync from zero)
@@ -107,7 +116,7 @@ Solution: Your node is not running; run `make start`. If problems persist, take 
 
 Download and build Quicksilver:
 
-    git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.2.0
+    git clone https://github.com/ingenuity-build/quicksilver.git --branch v0.3.0
     cd quicksilver
     make build
 
