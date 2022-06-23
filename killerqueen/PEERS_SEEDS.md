@@ -1,6 +1,7 @@
 ### Peers
 ```
 f9d2dbf6c80f08d12d1bc8d07ffd3bafa4965160@95.214.55.43:26651
+abe7397ff92a4ca61033ceac127b5fc3a9a4217f@65.108.98.218:25095
 ```
 
 ### Seeds
