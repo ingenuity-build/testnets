@@ -3,11 +3,7 @@
 To be able to claim rewards, Killer Queen particiants need to undertake a KYC process (Know Your Customer) for private individuals, 
 and a KYB process (Know Your Business) for legal entities. 
 
-No rewards will be distributed without the completion and approval of the KYC/KYB process. 
-
-The following individuals and entities are restricted and won't receive rewards as part of their participation to Killer Queen: 
-
-créer et insérer un fichier ici 
+No rewards will be distributed without the completion and approval of the KYC/KYB process.  
 
 Upon accessing the domain (link in the section below), please follow the KYC route if you're participating to Killer Queen as a private individual, or follow
 the KYB route if you're participating to Killer Queen as a legal entity. Don't forget to "submit" when you finish uploading all the requested 
@@ -50,9 +46,10 @@ or request, any access to personal or indentifiying documents or information.
 
 ## Process description 
 
+Please watch the following instructions before accessing this link to complete the process. 
 
 insert both videos here 
-+ the link
+
 
 
 
