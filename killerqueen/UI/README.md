@@ -26,4 +26,11 @@ For access and navigation information, and to get yourself acquainted with the U
 
 Please be advised that each user can get 100 atoms / osmo per 48h period (for a total of 5 claims across the duration of Killer Queen)
 
+**Tasks:** 
+
+- **Good old fashioned lover boy:** Run through the staking interface to mint a qAtom on the Hub testnet.
+- **Bicycle Race:** Run through the staking interface to mint qOsmo on the Osmosis testnet.
+
+More tasks will be added during the coming days.
+
 Happy testing!
