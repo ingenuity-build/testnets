@@ -3,7 +3,7 @@
 Before creating a validator, you must create an operator key. This will be used to identify your validator in the Quicksilver network. 
 
 ```go
-$ quicksilver keys add <key-name> [flags]
+$ quicksilverd keys add <key-name> [flags]
 ```
 
 By default, quicksilver will store keys in your OS-backed keyring. You can change this behavior by specifying the `--keyring-backend` flag.
