@@ -11,9 +11,9 @@ As always, points win prizes!
 | Killer Queen                   | Run a node on the Quicksilver chain on Genesis, in the first hundred blocks. | Up to 200 |   
 | Another One Bites the Dust     | Do not get jailed for the entire testnet                                     | 250       |   
 | Under Pressure                 | Record the fewest missed blocks over the entire testnet                      | Up to 200 |   
-| Happy Birthday, Freddie        | Set commission rate to 5.9% (Freddie Mercury's Birthday is 5/9)              |           | 
-| Living On My Own               | Withdraw rewards and bond to self                                            |           |   
-| You're My Best Friend          | Redelegate from your validator to a friend                                   |           |    
+| Happy Birthday, Freddie        | Set commission rate to 5.9% (Freddie Mercury's Birthday is 5/9)              | 25        | 
+| Living On My Own               | Withdraw rewards and bond to self                                            | 25        |   
+| You're My Best Friend          | Redelegate from your validator to a friend                                   | 25        |    
 | I Want It All                  |                                                                              |           |    
 | Breakthru                      |                                                                              |           |   
 | We Are The Champions           |                                                                              |           |   
