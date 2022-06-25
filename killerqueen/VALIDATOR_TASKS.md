@@ -14,7 +14,7 @@ As always, points win prizes!
 | Happy Birthday, Freddie        | Set commission rate to 5.9% (Freddie Mercury's Birthday is 5/9)              | 25        | 
 | Living On My Own               | Withdraw rewards and bond to self                                            | 25        |   
 | You're My Best Friend          | Redelegate from your validator to a friend                                   | 25        |    
-| I Want To Break Free           | Deploy a validator on [kqcosmos-1](/kqcosmos-1/README.md)                    | 150 (96 slots available) |  
+| I Want To Break Free           | Deploy a validator on [kqcosmos-1](https://github.com/ingenuity-build/testnets/blob/main/killerqueen/kqcosmos-1/README.md)                    | 150 (96 slots available) |  
 | Crazy Little Thing Called Love | Relay packets between killerqueen-1 (connection-0) and kqcosmos-1 (connection-0)                           | Up to 100 |   
 | I Want It All                  |                                                                              |           |    
 | Breakthru                      |                                                                              |           |   
