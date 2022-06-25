@@ -2,7 +2,7 @@
 
 To earn rewards on the Killer Queen testnet, validators will need to undertake a number of tasks (all named after Freddie / Queen songs, naturally - why waste a good pun?).
 
-New tasks will be released here (and announced on Discord) periodically.
+New tasks will be released here (and announced on Discord) periodically. The deadline for tasks - unless explicitly advertised otherwise - is the end of the testnet.
 
 As always, points win prizes!
 
