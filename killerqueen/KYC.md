@@ -14,7 +14,7 @@ submitted so far will be saved, and you'll be able to pick the process up where 
 
 You will not be able to create a new session while another one is still pending.
 
-Please read carefully the instuctions below beofre starting. The Quicksilver team is not responsible for any failure to complete the process, 
+Please read carefully the instuctions below before starting. The Quicksilver team is not responsible for any failure to complete the process, 
 no matter the reason. 
 
 You will receive an email when the KYC/KYB has gone through (either Approved or Failed).
