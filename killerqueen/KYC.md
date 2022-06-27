@@ -1,11 +1,11 @@
 ## Disclaimer 
 
 To be able to claim rewards, Killer Queen particiants need to undertake a KYC process (Know Your Customer) for private individuals, 
-and a KYB process (Know Your Business) for legal entities. 
+or a KYB process (Know Your Business) for legal entities. 
 
 No rewards will be distributed without the completion and approval of the KYC/KYB process.  
 
-Upon accessing the domain (link in the section below), please follow the KYC route if you're participating to Killer Queen as a private individual, or follow
+Upon accessing the domain (link below), please follow the KYC route if you're participating to Killer Queen as a private individual, or follow
 the KYB route if you're participating to Killer Queen as a legal entity. Don't forget to "submit" when you finish uploading all the requested 
 info and documents.
 
@@ -24,9 +24,9 @@ The Quicksilver team will not have, or request, any access to personal or indent
 
 ## Timeframe
 
-You will have a period of approximately two weeks to complete the KYC/KYB process.
-The process opened on June XXth, 2022.
-The process will close on July XXth, 2022.
+You will have a period of 10 days to complete the KYC/KYB process.
+The process opens on June 27th, 2022.
+The process will close on July 6th, 2022.
 
 ## Prerequisites 
 
@@ -37,20 +37,20 @@ During the process, in addition to the standard ID information and documentation
 
 Both addresses must start with quick1 and be 44 characters long.
 
-If your Mainnet address is the same as your Testnet address, you may submit it twice.
+Both addresses must be submitted. If your Mainnet address is the same as your Testnet address, you may submit it twice.
 
 If you need guidance generating a Mainnet address, please follow the instructions in [this guide.](https://github.com/rishisidhu/Quicksilver-guides/blob/main/generating_quicksilver_address.md) 
 
-The Quicksilver team will only have access to the Wallet addresses information, so that we are able to distribute the rewards. We will not have, 
+The Quicksilver team declines any responsibility for participants' failure to submit the appropriate and accurate information. 
+
+The Quicksilver team will only have access to the Wallet addresses information, so that we are able to distribute the rewards. We will not have 
 or request, any access to personal or indentifiying documents or information. 
 
 ## Process description 
 
-Please watch the following instructions before accessing this link to complete the process. 
+Please watch the following instructions before accessing this link below to complete the process. 
 
-insert both videos here 
+- [KYC process](https://vimeo.com/723937943)
+- [KYB process](https://vimeo.com/723935545)
 
-
-
-
-
+You may now [access the process](https://killerqueen.synaps.me/signup) ! Make sure to click on the appropriate domain depending on your status : Individual if you're participating as a private individual, or Corporate if you're participating as a legal entity. 
