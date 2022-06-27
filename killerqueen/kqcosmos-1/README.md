@@ -6,7 +6,7 @@ cd interchain-accounts
 make install
 ```
 
-**Genesis file:** [https://github.com/ingenuity-build/testnets/blob/main/killerqueen/kqcosmos-1/genesis.json](https://github.com/ingenuity-build/testnets/blob/main/killerqueen/kqcosmos-1/genesis.json)
+**Genesis file:** https://raw.githubusercontent.com/ingenuity-build/testnets/main/killerqueen/kqcosmos-1/genesis.json
 
 **Seed:** 66b0c16486bcc7591f2c3f0e5164d376d06ee0d0@65.108.203.151:26656
 
