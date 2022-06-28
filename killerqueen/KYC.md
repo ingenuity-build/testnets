@@ -22,6 +22,12 @@ You will receive an email when the KYC/KYB has gone through (either Approved or 
 The Quicksilver team is working with a third party [independent contractor](https://synaps.io/) to KYC/KYB Killer Queen participants. 
 The Quicksilver team will not have, or request, any access to personal or indentifiying documents or information. 
 
+Please be advised that the Quicksilver team is legally beholden to OFAC and EU sanctions lists. The Qucicksilver team cannot pick and choose which countries are sanctioned.  
+
+The following countries are restricted and will not pass the KYC or KYB process: 
+
+Albania, Belarus, Bosnia Herzegovina, Burundi, Central African Republic, China, Croatia, Cuba, DR Congo, Hong Kong, Iran, Iraq, Ivory Coast, Lebanon, Liberia, Libya, Mali, Myanmar, Nicaragua, North Korea, North Macedonia, Sudan, Syria, USA, Venezuela, Yemen, Zimbabwe. 
+
 ## Timeframe
 
 You will have a period of 10 days to complete the KYC/KYB process.
@@ -45,12 +51,6 @@ The Quicksilver team declines any responsibility for participants' failure to su
 
 The Quicksilver team will only have access to the Wallet addresses information, so that we are able to distribute the rewards. We will not have 
 or request, any access to personal or indentifiying documents or information. 
-
-Please be advised that the Quicksilver team is legally beholden to OFAC and EU sanctions lists. The Qucicksilver team cannot pick and choose which countries are sanctioned.  
-
-The following countries are restricted and will not pass the KYC or KYB process: 
-
-Albania, Belarus, Bosnia Herzegovina, Burundi, Central African Republic, China, Croatia, Cuba, DR Congo, Hong Kong, Iran, Iraq, Ivory Coast, Lebanon, Liberia, Libya, Mali, Myanmar, Nicaragua, North Korea, North Macedonia, Sudan, Syria, USA, Venezuela, Yemen, Zimbabwe. 
 
 ## Process description 
 
