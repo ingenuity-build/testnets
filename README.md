@@ -9,6 +9,8 @@ Killer Queen testnet is twofold, and will support Validators, as well as Liquid 
 
 Additional tasks will be added incrementally during the coming days, and can be found here: [Validator Tasks](/killerqueen/VALIDATOR_TASKS.md). Tasks will also be announced on Discord.
 
+Tasks for non-technical users can be found on [UI Tasks](/killerqueen/UI.md).
+
 Additional information regarding the rewards distribution will be added during the coming days. 
 
 Please be advised that the completion of a KYC process is necessary to be able to receive rewards. Follow the link below to undertake KYC.
@@ -32,5 +34,7 @@ Peers and Seeds can be found [here](/killerqueen/PEERS_SEEDS.md). Please add you
 [Validators](/killerqueen/VALIDATE.md)
 
 [Tasks for Validators](/killerqueen/VALIDATOR_TASKS.md)
+
+[UI Tasks](/killerqueen/UI.md)
 
 Found anything missing or inaccurate? [Create an issue](https://github.com/ingenuity-build/testnets/issues) or make a pull request!
