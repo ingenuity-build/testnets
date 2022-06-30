@@ -17,7 +17,6 @@ As always, points win prizes!
 | I Want To Break Free           | Deploy a validator on [kqcosmos-1](/kqcosmos-1/README.md)                    | 150 (96 slots available) |  
 | Crazy Little Thing Called Love | Relay packets between killerqueen-1 (connection-0) and kqcosmos-1 (connection-0)         | Up to 100 | 
 | Breakthru                      | Vote on proposal-3 to add kqcosmos-1 as a liquid staking zone                | 25        |     
-| I Want It All                  |                                                                              |           |    
-| We Are The Champions           |                                                                              |           |   
-| I Want To Break Free           |                                                                              |           |  
+| I Want It All                  | Vote YES on the Rhye upgrade proposal #6 AND vote NO on proposal #5          | 50        |    
+| We Are The Champions           | Sign in the first 100 blocks after the Rhye upgrade                          | Up to 100 |   
 | Don't Stop Me Now              |                                                                              |           |   
