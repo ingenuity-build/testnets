@@ -11,7 +11,7 @@ Additional tasks will be added incrementally during the coming days, and can be 
 
 Additional information regarding the rewards distribution will be added during the coming days. 
 
-Please be advised that the completion of a KYC process is necessary to be able to receive rewards. Instructions on how to complete the KYC process will be added during the coming days. 
+Please be advised that the completion of a KYC process is necessary to be able to receive rewards. Follow the link below to undertake KYC.
 
 ## Peers and Seeds
 
@@ -21,6 +21,8 @@ Peers and Seeds can be found [here](/killerqueen/PEERS_SEEDS.md). Please add you
 
 ~~[Create a Genesis Transaction](/killerqueen/GENESIS.md)~~ (no longer relevant)
 
+[KYC Process](/killerqueen/KYC.md)
+
 [Install the binaries](/killerqueen/INSTALL.md)
 
 [Initialize a node](/killerqueen/INITIALIZE.md)
@@ -28,5 +30,7 @@ Peers and Seeds can be found [here](/killerqueen/PEERS_SEEDS.md). Please add you
 [Key Management](/killerqueen/KEYS.md)
 
 [Validators](/killerqueen/VALIDATE.md)
+
+[Tasks for Validators](/killerqueen/VALIDATOR_TASKS.md)
 
 Found anything missing or inaccurate? [Create an issue](https://github.com/ingenuity-build/testnets/issues) or make a pull request!

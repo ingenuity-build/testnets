@@ -10,6 +10,8 @@ By default, quicksilver will store keys in your OS-backed keyring. You can chang
 
 To import an existing key via a mnemonic - for example if you generated and submitted a genesis transaction, you can provide a `--recover` flag and the `keys add` command will prompt you for the BIP39 mnemonic.
 
+**SECURITY NOTE:** _Keep separate mnemonics and keys for testnet purposes. Never reuse mnemonics or keys associated with live wallets or mainnets. It poses a great security risk to do so!_
+
 Visit the Cosmos SDK's keyring [documentation](https://docs.cosmos.network/v0.43/run-node/keyring.html) for more information.
 
 For a secure keyring setup, using Ledger, you can follow this guide by a community member (approved by our dev team):
