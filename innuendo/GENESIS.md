@@ -2,6 +2,9 @@
 
 In order to become a genesis validator on `innuendo-1`, you must generate a gentx (genesis transaction) in the following way:
 
+For generating the gentx, any version of `quicksilverd` will suffice. A new release (v0.6.x) will be generated for genesis.
+
+
 ## Init a new Quicksilver instance, using: 
 
 ```quicksilverd init --chain_id 'innuendo-1' <your_moniker>```
@@ -20,7 +23,7 @@ In order to become a genesis validator on `innuendo-1`, you must generate a gent
 
 You may use `quicksilverd gentx -h` to see additional flags for setting commission / identities / etc.)
 
-You will receive output such as: `Genesis transaction written to "/tmp/killerqueen/config/gentx/gentx-41eb6aa3ce902adf9603b1a1c55d005790a099c1.json"`
+You will receive output such as: `Genesis transaction written to "~/.quicksilver/config/gentx/gentx-41eb6aa3ce902adf9603b1a1c55d005790a099c1.json"`
 
 Copy the contents of this file into the registration form.
 
