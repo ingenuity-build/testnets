@@ -7,11 +7,11 @@ For generating the gentx, any version of `quicksilverd` will suffice. A new rele
 
 ## Init a new Quicksilver instance, using: 
 
-```quicksilverd init --chain_id 'innuendo-1' <your_moniker>```
+```quicksilverd init --chain-id 'innuendo-1' <your_moniker>```
 
 - Create, or recover a key, using 
 
-```quicksilverd keys add <keyname>` or `quicksilver keys add --recover <keyname>```
+```quicksilverd keys add <keyname>` or `quicksilverd keys add --recover <keyname>```
 
 ## Fund your account 
 
