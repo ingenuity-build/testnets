@@ -22,6 +22,8 @@ sudo apt update && sudo apt upgrade --yes
 sudo apt install make clang pkg-config libssl-dev build-essential git jq ncdu bsdmainutils htop net-tools lsof --yes
 
 ```
+
+```
 ver="1.18.1"
 wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
 sudo rm -rf /usr/local/go
