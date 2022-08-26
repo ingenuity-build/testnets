@@ -69,9 +69,11 @@ quicksilverd init <moniker> --chain-id innuendo-1
 Once initialized, overwrite the default genesis.json file with genesis state file for the particular network that you are joining. You may retrieve the genesis state file from the Quicksilver repository or another trusted source:
 
 ```
-cd ~/.quicksilverd/config
+wget -qO $HOME/.quicksilverd/config/genesis.json https://raw.githubusercontent.com/ingenuity-build/testnets/main/innuendo/genesis.json
 
-wget https://raw.githubusercontent.com/ingenuity-build/testnets/main/innuendo/genesis.json
+quicksilverd tendermint unsafe-reset-all
+
+cd ~/.quicksilverd/config
 
 ## verify the downloaded file matches the following hash:
 
