@@ -63,7 +63,7 @@ To initialize your node,
 ```
 # Replace moniker with your desired node's moniker.
 
-quicksilverd init NAME --chain-id innuendo-1
+quicksilverd init <moniker> --chain-id innuendo-1
 ```
 
 Once initialized, overwrite the default genesis.json file with genesis state file for the particular network that you are joining. You may retrieve the genesis state file from the Quicksilver repository or another trusted source:
