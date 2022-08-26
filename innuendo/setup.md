@@ -108,9 +108,9 @@ PEERS="c13cf6fddfcc95cff0c4523843e25a102f09dff6@144.91.127.5:36656,a62999cdd20df
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.quicksilverd/config/config.toml
 ```
 
-```
 ### Create systemd
 
+```
 sudo tee /etc/systemd/system/quicksilverd.service > /dev/null <<EOF
 [Unit]
 Description=Quicksilver
@@ -132,7 +132,6 @@ sudo systemctl enable quicksilverd
 
 sudo systemctl restart quicksilverd && journalctl -u quicksilverd -f
 ```
-
 
 You have quicksilverd running and sync, you can create a validator on the Quicksilver network via a MsgCreateValidator transaction:
 
