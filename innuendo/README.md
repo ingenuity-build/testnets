@@ -11,7 +11,7 @@ Genesis time is set to 2022-09-26T18:30:00Z. The network will be started asyncro
 1. Assert the genesis file state is correct:
 ```
 joe@mac innuendo % shasum -a256 genesis.json
-f1388be10577d03e8740d54df04850cb5bdd598fe2fc3abd77b0526f466560dc  genesis.json
+6f97a06cdcfddc5774d4ca4fbee936bc8462b72b74c4337753771fecdfebe93f  genesis.json
 ```
 
 1. Stop your existing `quicksilverd` service (depends on setup, but often `systemctl stop quicksilver`).
