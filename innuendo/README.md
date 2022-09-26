@@ -4,7 +4,7 @@ Innuendo-2 is a replacement for Innuendo-1 long term testnet for Quicksilver. It
 
 Source code will be released for self-building binaries prior to mainnet launch. Code is remaining incognito until then for strategic purposes.
 
-Genesis time is set to 2022-09-26T10:00:00Z. The network will be started asyncronously. Accounts and validators from innuendo-1 remain in place. The genesis instructions are as follows:
+Genesis time is set to 2022-09-26T10:00:00Z. The network will be started asyncronously. Accounts and validators from innuendo-1 remain in place; do not delete any keys or destroy seeds from innuendo-1. The genesis instructions are as follows:
 
 1. Download the new genesis file from https://raw.githubusercontent.com/ingenuity-build/testnets/main/innuendo/genesis.json.
 
