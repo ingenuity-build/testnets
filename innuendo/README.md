@@ -1,23 +1,12 @@
-## Innuendo-3 Instructions
+## Innuendo-4 Instructions
 
-Innuendo-3 is a replacement for the defunct Innuendo-2 long term testnet for Quicksilver. It starts with v0.9.1 of the `quicksilverd` binary which can be downloaded from the releases section of this repository, or as a docker container from quicksilverzone/quicksilver:v0.9.0.
+Innuendo-4 is a replacement for the innuendo-3 long term testnet for Quicksilver; it was created with the intent of onboarding public testnets against a fresh chain, clean of existing state, as close to mainnet scenario as possible. It starts with v0.10.5 of the `quicksilverd` binary which can be downloaded from the releases section of this repository, or as a docker container from quicksilverzone/quicksilver:v0.10.5.
 
 Source code will be released for self-building binaries prior to mainnet launch. Code is remaining incognito until then for strategic purposes.
 
-Genesis time is set to 2022-09-26T18:30:00Z. The network will be started asyncronously. Accounts and validators from innuendo-1 remain in place; do not delete any keys or destroy seeds from innuendo-1. The genesis instructions are as follows:
+Genesis time is set to 2022-12-08T19:00:00Z. The network was started asyncronously. Accounts and validators from previous testnets were dropped. You will need to request tokens from Discord.
 
-1. Download the new genesis file from https://raw.githubusercontent.com/ingenuity-build/testnets/main/innuendo/genesis.json.
+You may download a recent snapshot of innuendo-4 from here: https://storage.googleapis.com/innuendo-4-snapshots/innuendo-4.tgz (302Mb). This snapshot is using v0.10.8 of quicksilverd.
 
-1. Assert the genesis file state is correct:
-```
-joe@mac innuendo % shasum -a256 genesis.json
-6f97a06cdcfddc5774d4ca4fbee936bc8462b72b74c4337753771fecdfebe93f  genesis.json
-```
+The current peers are available: b9b8bb23e61d53ff3b293485d04ea567ebcd7933@65.108.65.94:26656,a94cf3e93cec8eef6d67c2972e4af5eae1a118b2@65.108.2.27:26656,926ce3f8ce4cda6f1a5ee97a937a44f59ff28fbf@65.108.13.176:26656
 
-1. Stop your existing `quicksilverd` service (depends on setup, but often `systemctl stop quicksilver`).
-
-1. Download the new binary from from https://github.com/ingenuity-build/testnets/releases/tag/v0.9.1. Alternatively, pull the docker image at quicksilverzone/quicksilver:v0.9.1.
-
-1. Run `quicksilverd tendermint unsafe-reset-all` to reset the state of your deployment to empty. 
-
-1. Restart your `quicksilverd` service (depends on setup, but often `systemctl start quicksilver`).
