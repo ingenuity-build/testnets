@@ -2,6 +2,8 @@
 
 Innuendo-4 is a replacement for the innuendo-3 long term testnet for Quicksilver; it was created with the intent of onboarding public testnets against a fresh chain, clean of existing state, as close to mainnet scenario as possible. It starts with v0.10.5 of the `quicksilverd` binary which can be downloaded from the releases section of this repository, or as a docker container from quicksilverzone/quicksilver:v0.10.5.
 
+If you sync from genesis, you will need to ensure you follow the upgrade paths can detailed in the 'Innuendo-4' release, [here](https://github.com/ingenuity-build/testnets/releases/tag/v0.10.5)
+
 Source code will be released for self-building binaries prior to mainnet launch. Code is remaining incognito until then for strategic purposes.
 
 Genesis time is set to 2022-12-08T19:00:00Z. The network was started asyncronously. Accounts and validators from previous testnets were dropped. You will need to request tokens from Discord. Genesis can be downloaded from [here](./genesis.json).
