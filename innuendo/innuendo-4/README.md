@@ -6,7 +6,7 @@ If you sync from genesis, you will need to ensure you follow the upgrade paths c
 
 Source code will be released for self-building binaries prior to mainnet launch. Code is remaining incognito until then for strategic purposes.
 
-Genesis time is set to 2022-12-08T19:00:00Z. The network was started asyncronously. Accounts and validators from previous testnets were dropped. You will need to request tokens from Discord. Genesis can be downloaded from [here](./genesis.json).
+Genesis time is set to 2022-12-08T19:00:00Z. The network was started asyncronously. Accounts and validators from previous testnets were dropped. You will need to request tokens from Discord. Genesis can be downloaded from [here](genesis.json).
 
 You may download a recent snapshot of innuendo-4 from here: https://storage.googleapis.com/innuendo-4-snapshots/innuendo-4.tgz (302Mb). This snapshot is using v0.10.8 of quicksilverd.
 
