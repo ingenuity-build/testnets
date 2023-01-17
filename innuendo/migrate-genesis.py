@@ -3,10 +3,7 @@ import json
 
 '''
 This script exists to take raw exported state from innuendo-4 chain, zero the interchainstaking and interchainquery state, and ibc connections/channels/clients.
-It also burns the qAsset and ibc/denom balances
-
-
-
+It also burns the qAsset and ibc/denom balances and increases voting period on to 21600s
 Chain ID is set to innuendo-5 and the genesis time is set to 1605 UTC on 17/01/2023.
 '''
 
@@ -57,8 +54,9 @@ print("⚛️  Zeroing epoch state")
 input.get('app_state').get('epochs').get('epochs')[0].update({"start_time": "0001-01-01T00:00:00Z", "current_epoch": "0", "current_epoch_start_time": "0001-01-01T00:00:00Z", "epoch_counting_started": False, "current_epoch_start_height": "0"})
 input.get('app_state').get('epochs').get('epochs')[1].update({"start_time": "0001-01-01T00:00:00Z", "current_epoch": "0", "current_epoch_start_time": "0001-01-01T00:00:00Z", "epoch_counting_started": False, "current_epoch_start_height": "0"})
 
-
-
+## increase voting period to 6 hours
+print("⚛️ Increasing voting period to 21600s")
+input.get('app_state').get('gov').get('voting_params').update({'voting_period': "21600s"})
 
 
 ## chain id and genesis time
