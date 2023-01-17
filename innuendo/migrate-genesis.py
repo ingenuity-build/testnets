@@ -11,28 +11,34 @@ with open('export-innuendo-4-608612.json') as file:
   input = json.load(file)
   file.close()
 
-coins_to_burn = {}
 ## remove qatoms and ibc denoms
 print("⚛️  Removing uqatom and ibc denoms from account balances")
 balances = input.get('app_state').get('bank').get('balances')
-for account_index, account in enumerate(balances):
+for account in balances:
   balance = account.get('coins', [])
-  for coin_index, coin in enumerate(account.get('coins', [])):
-    if coin.get('denom') != "uqck":
-      coins_to_burn.update({coin.get('denom'): coins_to_burn.get(coin.get('denom'), 0)+int(coin.get('amount'))})
-      print("  ⚛ Removing {} from {}".format(coin, account.get('address')))
-      balance.remove(coin)
-      account.update({'coins': balance})
+  print(balance)
+  for coin in account.get('coins', []):
+    found_quick=False
+    if coin.get('denom') == "uqck":
+      account.update({'coins': [coin]})
+      found_quick = True
+      break
+  if found_quick == False:
+    account.update({'coins': []})
 
-print("⚛️  Coins to remove from supply")
-print(coins_to_burn)
+community_pool = input.get('app_state').get('distribution').get('fee_pool').get('community_pool')
+for coin in community_pool:
+    if coin.get('denom') == "uqck":
+      input.get('app_state').get('distribution').get('fee_pool').update({'community_pool': [coin]})
+      break
 
 supply = input.get('app_state').get('bank').get('supply')
 print("⚛️  Supply before migration")
 print(supply)
-for denom, amount in coins_to_burn.items():
-  print("  ⚛ Removing {} from supply".format({"amount": str(amount), "denom": denom}))
-  supply.remove({"amount": str(amount), "denom": denom})
+qck = {}
+for coin in supply:
+  if coin.get('denom') == 'uqck':
+    input.get('app_state').get('bank').update({'supply': [coin]})
 
 print("⚛️  Supply post migration")
 print(input.get('app_state').get('bank').get('supply'))
@@ -55,7 +61,7 @@ input.get('app_state').get('epochs').get('epochs')[0].update({"start_time": "000
 input.get('app_state').get('epochs').get('epochs')[1].update({"start_time": "0001-01-01T00:00:00Z", "current_epoch": "0", "current_epoch_start_time": "0001-01-01T00:00:00Z", "epoch_counting_started": False, "current_epoch_start_height": "0"})
 
 ## increase voting period to 6 hours
-print("⚛️ Increasing voting period to 21600s")
+print("⚛️  Increasing voting period to 21600s")
 input.get('app_state').get('gov').get('voting_params').update({'voting_period': "21600s"})
 
 
