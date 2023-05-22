@@ -21,7 +21,7 @@
  
  ```wget -O data-rhye-1.tar.gz https://storage.googleapis.com/rhye-1_snapshots/rhye-1.tar.gz```
 
- ``` tar -xvzf rhey-1.tar.gz -C ~/.quicksilverd/```
+ ``` tar -xvzf data-rhye-1.tar.gz -C ~/.quicksilverd/```
 
  (be sure to replace ~/.quicksilverd with your node's HOME).
 
