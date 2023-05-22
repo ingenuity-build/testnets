@@ -39,7 +39,7 @@
 
 **NOTE**: Faucet for ```rhye-1``` is available at https://faucet.test.quicksilver.zone
 
-## Innuendo-4 Instructions
+## Rhye-1 Instructions
 
 Rhye-1  is a replacement for the innuendo-5 long term testnet for Quicksilver; it was created with the intent of onboarding public testnets against a fresh chain. It starts with v1.4.2-rc0 of the `quicksilverd` binary which can be downloaded from the releases section of this repository, or as a docker container from quicksilverzone/quicksilver:v1.4.2-rc0.
 
