@@ -9,7 +9,7 @@
 
 ## 2. Init a new Quicksilver instance, using: 
 
-```quicksilverd init --chain_id 'rhye-1' <your_moniker>```
+```quicksilverd init --chain-id 'rhye-1' <your_moniker>```
 
 ## 3. Download the genesis.json and place in /config
 
