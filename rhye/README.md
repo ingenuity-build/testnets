@@ -4,12 +4,12 @@
 ## 1. Build Instructions
  ```git fetch && git checkout v1.4.2-rc7```
 
- ```make install```
+ ```make build install```
 
 
 ## 2. Init a new Quicksilver instance, using: 
 
-```quicksilverd init --chain_id 'rhye-1' <your_moniker>```
+```quicksilverd init --chain-id 'rhye-1' <your_moniker>```
 
 ## 3. Download the genesis.json and place in /config
 
@@ -31,7 +31,7 @@
 
 ## 6. Start the node
 
-```quicksilverd start ``` or, if using systemd, ```systemctl start quicksilver```
+```quicksilverd start ``` or, if using systemd, ```sudo systemctl start quicksilver```
 
 
 # For Validators:
